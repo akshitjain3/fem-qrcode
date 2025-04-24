@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+    font-family: 'Outfit';
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/outfit-v11-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/outfit-v11-latin-700.woff2') format('woff2'); 
+}
+
+body {
+    background-color: var(--slate-300);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+p{
+    font-size: 15px;
+    color: var(--slate-500);
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.text-preset1 {
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0;
+    color: var(--slate-900);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.barcodeWrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 500px;
+    padding: 1rem 1rem 2.5rem 1rem;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+.barcodeWrapper > img {
+    margin-bottom: 1.5rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
